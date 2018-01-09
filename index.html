@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="build/css/main.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo" >
-          Sit <span class="lightBlue">on</span> chair
-        </div>
-        <nav>
+  <header>
+      <div class="container row navBarBackground">
+          <div class="col-5 logoContainer">
+              <div class="logo" >
+                  Sit <span class="lightBlue">on</span> chair
+              </div>
+          </div>
+          <i class="fa fa-bars hamburgerMenuIcon" aria-hidden="true"></i>
+        <nav class="col-5">
           <ul id="navBar">
             <li>O firmie</li>
             <li>Galeria</li>
@@ -182,16 +185,16 @@
     <footer class="container row">
       <div class="col-5 copywright">Copywright 2014|All Rights Reserved. - Sit On Chair</div>
       <div class="col-3 socialMedia">
-        <img src="images/flickr.png">
-        <img src="images/vimeo.png">
-        <img src="images/pinterest.png">
-        <img src="images/twitter.png">
+        <i class="fa fa-flickr" aria-hidden="true"></i>
+        <i class="fa fa-vimeo" aria-hidden="true"></i>
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
       </div>
       <div class="col-1 footerLogo">
         Sit <span>On</span> Chair
       </div>
     </footer>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="build/bundle.js"></script>
   </body>
 </html>
