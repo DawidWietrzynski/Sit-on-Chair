@@ -8,31 +8,45 @@
   </head>
   <body>
   <header>
-      <div class="container row navBarBackground">
+      <div class="container row aboutUs">
           <div class="col-5 logoContainer">
               <div class="logo" >
                   Sit <span class="lightBlue">on</span> chair
               </div>
           </div>
-          <i class="fa fa-bars hamburgerMenuIcon" aria-hidden="true"></i>
-        <nav class="col-5">
-          <ul id="navBar">
-            <li>O firmie</li>
-            <li>Galeria</li>
-            <li>Kontakt</li>
-          </ul>
-          <ul class="hidden">
-            <li>Aktualności</li>
-            <li>Nasz team</li>
-            <li>Historia</li>
+          <div id="menuIcon">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        <nav class="col-5 showMenu">
+            <div class="hideElement" id="backIcon"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></div>
+          <ul id="navBar" class="">
+            <li class="menuItem"><a href="#">O firmie</a></li>
+            <li class="menuItem"><a href="#">Galeria</a></li>
+            <li class="menuItem"><a href="#">Kontakt</a></li>
           </ul>
         </nav>
       </div>
+      <div class="row container detailMenu">
+          <div class="col-5 "></div>
+          <div class="col-5">
+              <ul class="secondStepMenu hideElement hideElementDesktop">
+                  <li class="menuItem"><a href="#">Aktualności</a></li>
+                  <li class="menuItem"><a href="#">Nasz team</a></li>
+                  <li class="menuItem"><a href="#">Historia</a></li>
+              </ul>
+          </div>
+      </div>
     </header>
+
     <section id="middleSection" class="container row">
       <div class="carousel row">
         <i class="fa fa-angle-left carouselArrow col-1 " aria-hidden="true"></i>
-        <img src="images/black_chair.png" alt="black_chair" class="col-5">
+          <ul id="slides">
+              <li class="slide showing sizeFix1"><img src="images/black_chair.png" alt="black_chair"></li>
+              <li class="slide sizeFix"><img src="images/orange_chair.png" alt="orange_chair"> </li>
+              <li class="slide"><img src="images/red_chair.png" alt="red_chair"> </li>
+          </ul>
+
         <div class="descriptionCarousel col-5">
           <h2>Sit <span class="lightBlue">on</span> our <span class="lightBlue">chair</span></h2>
           <p>
@@ -172,8 +186,12 @@
         <div class="row container contactForms">
           <textarea class="col-5 borderFormInputs" title=""></textarea>
           <div class="checkbox col-5">
-            <label for="checkData" class="checkboxLabel col-12" >
-              <span class="checkboxRealBox"></span>
+            <label for="checkData" class="checkboxLabel col-12">
+              <span class="checkboxRealBox">
+                  <div class="checkedIcon">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                  </div>
+              </span>
               <span class="chechboxText">Zgadzam się na przetwarzanie danych osobowych</span>
             </label>
             <input type="checkbox" title="" class="checkboxBox col-12" id="checkData"/>
@@ -194,7 +212,6 @@
         Sit <span>On</span> Chair
       </div>
     </footer>
-
     <script type="text/javascript" src="build/bundle.js"></script>
   </body>
 </html>
